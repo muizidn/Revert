@@ -84,6 +84,8 @@
 		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
+		A72A5A7D2573807E002FCEEE /* InspectorFrameworkWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A5A7C2573807E002FCEEE /* InspectorFrameworkWrapper.framework */; };
+		A72A5A7E2573807E002FCEEE /* InspectorFrameworkWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A72A5A7C2573807E002FCEEE /* InspectorFrameworkWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B31A877D24EE1EE30091A01F /* DynamicColourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A877C24EE1EE30091A01F /* DynamicColourCell.swift */; };
 		B3681C3824EB94F600FB88D4 /* Dynamic Colours.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */; };
 		B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3681C3924EB962000FB88D4 /* DynamicColourViewController.swift */; };
@@ -210,6 +212,20 @@
 		FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A72A5A7F2573807E002FCEEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A72A5A7E2573807E002FCEEE /* InspectorFrameworkWrapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
 		90125D662301166F003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Revert/Resources/Base.lproj/Visual Effect View.storyboard"; sourceTree = "<group>"; };
@@ -295,6 +311,8 @@
 		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A72A5A7825738071002FCEEE /* FlexExporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlexExporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72A5A7C2573807E002FCEEE /* InspectorFrameworkWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InspectorFrameworkWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31A877C24EE1EE30091A01F /* DynamicColourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColourCell.swift; sourceTree = "<group>"; };
 		B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Dynamic Colours.storyboard"; sourceTree = "<group>"; };
 		B3681C3924EB962000FB88D4 /* DynamicColourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColourViewController.swift; sourceTree = "<group>"; };
@@ -388,6 +406,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72A5A7D2573807E002FCEEE /* InspectorFrameworkWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +486,7 @@
 				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
 				9A2F94701B140B0E007E51B1 /* Scripts */,
 				BB2720BD1C9F8DAE002E53EE /* Shared */,
+				A72A5A7725738071002FCEEE /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -565,6 +585,15 @@
 				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
 			);
 			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		A72A5A7725738071002FCEEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A72A5A7C2573807E002FCEEE /* InspectorFrameworkWrapper.framework */,
+				A72A5A7825738071002FCEEE /* FlexExporter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BB27204D1C9B8E44002E53EE /* Revert-tvOS */ = {
@@ -863,6 +892,7 @@
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
+				A72A5A7F2573807E002FCEEE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1722,6 +1752,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -1729,6 +1763,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 			};
 			name = Release;
 		};
